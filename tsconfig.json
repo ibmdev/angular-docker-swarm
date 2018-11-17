@@ -9,6 +9,13 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": true, // someArg has an implicit `any` type
+    "strictNullChecks": false, // if true, Object is possibly 'undefined'. Avoid to have message "Cannot read property 'toString' of undefined"
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noImplicitReturns": true, // Report errors when missing return statement
+    "noFallthroughCasesInSwitch": true, // No break statement - fallthrough
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
